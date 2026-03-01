@@ -40,8 +40,8 @@ The installer creates timestamped backups under:
 `~/.local/share/nvim-tmux-hotreload-fix/backups/`
 
 ## Repo layout
-- `docs/issue-and-fix.md`: detailed write-up
 - `docs/compatibility.md`: terminal/tmux compatibility notes
+- `docs/validation-matrix.md`: test/validation tracking
 - `tmux/`: tmux snippets
 - `nvim/`: Neovim snippets
 - `scripts/`: install/uninstall/verify

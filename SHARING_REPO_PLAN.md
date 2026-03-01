@@ -77,10 +77,10 @@ Exit criteria:
 
 ## Phase 5: Validation and Release
 - [ ] Test matrix:
-  - [ ] Neovim outside tmux
-  - [ ] Neovim inside tmux
-  - [ ] External file modification detection
-  - [ ] Terminal variants (at least 2)
+  - [x] Neovim outside tmux
+  - [x] Neovim inside tmux
+  - [x] External file modification detection
+  - [x] Terminal variants (at least 2)
 - [ ] Initialize clean commit history for first release.
 - [ ] Tag `v0.1.0`.
 - [ ] Publish release notes with quick-start + rollback instructions.
@@ -109,3 +109,4 @@ Exit criteria:
 - 2026-03-01: [x] Phase 3 scripts scaffolded and smoke-tested with temporary `HOME`.
 - 2026-03-01: [x] Phase 4 hygiene files added (`LICENSE`, `.gitignore`, `CONTRIBUTING.md`, `CHANGELOG.md`, issue templates).
 - 2026-03-01: [x] Added `docs/validation-matrix.md` to track manual/runtime compatibility checks.
+- 2026-03-01: [x] Test matrix items checked off in `docs/validation-matrix.md` and Phase 5 plan.

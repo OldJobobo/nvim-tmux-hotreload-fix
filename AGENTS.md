@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 This repository currently contains:
-- `nvim-tmux-hotreload-issue-and-fix.md`: primary issue/fix documentation.
+- `README.md`: primary project and usage documentation.
 - `omarchy-checktime-fallback.lua`: Neovim fallback autocmd config snippet.
 - `SHARING_REPO_PLAN.md`: tracked roadmap for turning this into a shareable toolkit.
 
@@ -24,7 +24,7 @@ If scripts are added later, document canonical commands in `README.md` (for exam
 ## Coding Style & Naming Conventions
 - Use UTF-8 text and Unix line endings.
 - Prefer 2-space indentation in Lua and shell snippets.
-- Keep filenames descriptive and kebab-case for docs/scripts (example: `issue-and-fix.md`).
+- Keep filenames descriptive and kebab-case for docs/scripts (example: `validation-matrix.md`).
 - Keep Lua identifiers clear and scoped (`omarchy_checktime_fallback`, `reload_group`).
 - Add short comments only where behavior is non-obvious.
 

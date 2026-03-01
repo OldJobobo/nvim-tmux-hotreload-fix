@@ -1,9 +1,11 @@
 # nvim-tmux-hotreload-fix
 
-Fix Neovim external file hotreload reliability when running inside `tmux`.
+Fix Neovim theme hotreload reliability (and related external file reloads) when running inside `tmux`.
 
 ## What this solves
 Some Neovim setups rely mostly on focus/terminal transition events (`FocusGained`, `TermLeave`) to trigger `:checktime`. Inside tmux, those events can be inconsistent, so modified files are not always reloaded promptly.
+
+Primary target: theme-related file updates used by Neovim theme workflows.
 
 This repo applies a two-part fix:
 - tmux focus capability hint in `~/.config/tmux/tmux.conf`
@@ -25,10 +27,10 @@ tmux kill-server
 3. Restart tmux and reopen Neovim.
 
 ## Verify behavior
-- Open a file in Neovim inside tmux.
-- Modify the same file externally.
+- Open Neovim inside tmux with a theme/config file loaded.
+- Modify the same theme-related file externally.
 - Return to Neovim, switch buffer or wait briefly (`CursorHold`).
-- Confirm file change is detected/reloaded.
+- Confirm the change is detected/reloaded (for example, updated theme values are applied).
 
 ## Rollback
 ```bash

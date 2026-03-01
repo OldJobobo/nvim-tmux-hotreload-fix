@@ -5,6 +5,8 @@ Date: 2026-03-01
 ## Problem
 Neovim hotreload behavior worked when Neovim was launched directly in the terminal, but did not reliably reload changes when Neovim was running inside tmux.
 
+Primary impact in this case: theme hotreloading inside Neovim.
+
 ## Observed Cause
 The reload path depended on event triggers (notably focus and terminal transition events):
 - `FocusGained`
@@ -57,9 +59,10 @@ tmux kill-server
 2. Start a new tmux session and reopen Neovim.
 
 ## Verification Checklist
-- In tmux Neovim, modify a file externally.
+- In tmux Neovim, modify a theme-related file externally.
 - Return to Neovim, switch buffer or pause cursor briefly.
 - Confirm Neovim notices file change/reloads without manual `:checktime`.
+- Confirm theme changes are applied after reload.
 
 ## Files Changed
 - `~/.config/tmux/tmux.conf`

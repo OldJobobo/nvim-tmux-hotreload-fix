@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 - Repository scaffolding and release preparation in progress.
+- Documentation scope clarified: primary use-case is Neovim theme hotreload reliability inside tmux.
+- Added recorded manual validation note for successful theme-change reload inside tmux.
 
 ## [0.1.0] - 2026-03-01
 ### Added

@@ -1,0 +1,3 @@
+# >>> nvim-tmux-hotreload-fix >>>
+set -as terminal-features ",xterm-kitty:focus"
+# <<< nvim-tmux-hotreload-fix <<<
